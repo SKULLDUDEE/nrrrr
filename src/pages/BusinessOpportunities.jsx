@@ -1,8 +1,19 @@
 import { Link } from 'react-router-dom';
 import airwindshield from '../assets/airwindshield.png';
-
+import mhindra from '../assets/mhindra.png';
+import lenskart from '../assets/lenskart.png';
+import firstcry from '../assets/firstcry.png';
+import wow_momo from '../assets/wow_momo.png';
+import chaipt from '../assets/chaipt.png';
+import dtdc from '../assets/dtdc.png';
+import dhl from '../assets/dhl.png';
+import eurokids from '../assets/eurokids.png';
+import kidzee from '../assets/kidzee.png';
+import lakmesaloon from '../assets/lakmesaloon.png';
+import appolo from '../assets/appolo.png';
 
 const businessData = [
+
     {
       "id": 1,
       "name": "AIS Windshield Experts",
@@ -19,7 +30,7 @@ const businessData = [
       "investment": "₹ 10L - 20L",
       "space": "800 - 1000 Sq. ft",
       "outlets": "100-200",
-      "logo": "mahindra_first_choice"
+      "logo": mhindra
     },
     {
       "id": 3,
@@ -28,7 +39,7 @@ const businessData = [
       "investment": "₹ 30L - 50L",
       "space": "300 - 800 Sq. ft",
       "outlets": "500+",
-      "logo": "lenskart"
+      "logo": lenskart
     },
     {
       "id": 4,
@@ -37,7 +48,7 @@ const businessData = [
       "investment": "₹ 20L - 40L",
       "space": "600 - 1000 Sq. ft",
       "outlets": "400+",
-      "logo": "firstcry"
+      "logo": firstcry
     },
     {
       "id": 5,
@@ -46,7 +57,7 @@ const businessData = [
       "investment": "₹ 8L - 20L",
       "space": "150 - 300 Sq. ft",
       "outlets": "300+",
-      "logo": "wow_momo"
+      "logo": wow_momo
     },
     {
       "id": 6,
@@ -55,7 +66,7 @@ const businessData = [
       "investment": "₹ 10L - 25L",
       "space": "250 - 500 Sq. ft",
       "outlets": "200+",
-      "logo": "chai_point"
+      "logo": chaipt
     },
     {
       "id": 7,
@@ -64,7 +75,7 @@ const businessData = [
       "investment": "₹ 1L - 5L",
       "space": "200 - 500 Sq. ft",
       "outlets": "1000+",
-      "logo": "dtdc"
+      "logo": dtdc
     },
     {
       "id": 8,
@@ -73,7 +84,7 @@ const businessData = [
       "investment": "₹ 5L - 10L",
       "space": "200 - 500 Sq. ft",
       "outlets": "500+",
-      "logo": "dhl"
+      "logo": dhl
     },
     {
       "id": 9,
@@ -82,7 +93,7 @@ const businessData = [
       "investment": "₹ 10L - 20L",
       "space": "2000 - 3000 Sq. ft",
       "outlets": "1200+",
-      "logo": "eurokids"
+      "logo": eurokids
     },
     {
       "id": 10,
@@ -91,7 +102,7 @@ const businessData = [
       "investment": "₹ 12L - 25L",
       "space": "1500 - 3000 Sq. ft",
       "outlets": "2000+",
-      "logo": "kidzee"
+      "logo": kidzee
     },
     {
       "id": 11,
@@ -100,7 +111,7 @@ const businessData = [
       "investment": "₹ 50L - 1 Cr",
       "space": "1200 - 2000 Sq. ft",
       "outlets": "500+",
-      "logo": "lakme_salon"
+      "logo": lakmesaloon
     },
     {
       "id": 12,
@@ -109,7 +120,7 @@ const businessData = [
       "investment": "₹ 10L - 20L",
       "space": "300 - 1000 Sq. ft",
       "outlets": "4000+",
-      "logo": "apollo_pharmacy"
+      "logo":appolo
     }
   ];
 

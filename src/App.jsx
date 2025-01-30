@@ -20,7 +20,7 @@ import RegistrationBenefits from './components/RegistrationBenefits';
 import Services from './components/Services'; 
 import SuccessStories from './components/SuccessStories'; 
 import Events from './components/UpcomingEvents'; 
-
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 const App = () => {
   return (
@@ -42,8 +42,9 @@ const App = () => {
         <Route path="/AllDealerships" element={<AllDealerships />} />
         <Route path="/register" element={<RegistrationBenefits />} />
         <Route path="/services" element={<Services />} />
-                <Route path="/success-stories" element={<SuccessStories />} />
-                <Route path="/events" element={<Events />} />
+        <Route path="/success-stories" element={<SuccessStories />} />
+        <Route path="/events" element={<Events />} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </div>

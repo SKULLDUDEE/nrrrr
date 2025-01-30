@@ -20,12 +20,10 @@ const Hero = () => {
 
         {/* Call-to-Action Buttons */}
         <div className="flex gap-4">
-          <button className="bg-gradient-to-t from-orange-700 to-orange-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+          <button className="bg-gradient-to-t from-white-700 to-orange-300 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transform hover:scale-105 transition">
             Register Your Business
           </button>
-          <button className="bg-white text-orange-600 font-semibold py-3 px-6 rounded-lg shadow-lg transform hover:scale-105 transition">
-            Start Your Growth Journey
-          </button>
+          
         </div>
       </div>
 

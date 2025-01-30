@@ -1,53 +1,86 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { SocialIcon } from "react-social-icons";
 import { assets } from "../assets/assets";
 
 const Footer = () => {
   return (
-    <div className="bg-none text-white py-12">
-      {/* Footer Grid */}
-      <div className="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-[3fr_1fr_1fr] gap-14 text-sm">
+    <div className="py-12 px-6 border-t border-gray-300">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-12">
         {/* Logo & Description */}
-        <div>
-          <img src={assets.logo} className="mb-5 w-32" alt="Company Logo" />
-          <p className="text-gray-400">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text since the 1500s, when an unknown printer scrambled it to make a type specimen book.
+        <div className="flex flex-col items-start">
+          <img
+            src={assets.logo}
+            className="mt-10 w-40 transform hover:scale-110 transition-transform duration-300"
+            alt="Company Logo"
+          />
+          <p className="text-gray-800 max-w-sm text-lg leading-relaxed">
+            Empowering businesses with cutting-edge solutions to streamline operations and accelerate growth.
           </p>
         </div>
 
-        {/* Company Links with Routing */}
-        <div>
-          <p className="text-xl font-medium mb-5 text-white">COMPANY</p>
-          <ul className="flex flex-col gap-2 text-gray-400">
+        {/* Company Links */}
+        <div className="mt-20">
+        
+          <ul className="space-y-3 text-lg text-gray-800">
             <li>
-              <Link to="/" className="hover:text-white cursor-pointer">Home</Link>
+              <Link
+                to="/"
+                className="hover:text-black transition-all duration-300 hover:translate-x-2"
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/about" className="hover:text-white cursor-pointer">About Us</Link>
+              <Link
+                to="/about"
+                className="hover:text-black transition-all duration-300 hover:translate-x-2"
+              >
+                About Us
+              </Link>
             </li>
-            
             <li>
-              <Link to="/privacy-policy" className="hover:text-white cursor-pointer">Privacy Policy</Link>
+              <Link
+                to="/privacy-policy"
+                className="hover:text-black transition-all duration-300 hover:translate-x-2"
+              >
+                Privacy Policy
+              </Link>
             </li>
           </ul>
         </div>
 
-        {/* Contact Details */}
+        {/* Social Media Links */}
         <div>
-          <p className="text-xl font-medium mb-5 text-white">GET IN TOUCH</p>
-          <ul className="flex flex-col gap-2 text-gray-400">
-            <li>+1-212-456-7890</li>
-            <li>contact@foreveryou.com</li>
-          </ul>
+          <p className="text-2xl font-semibold mt-20 text-black">CONNECT WITH US</p>
+          <div className="flex space-x-4">
+            <SocialIcon
+              url="https://www.instagram.com/businessxstream.tbs/"
+              fgColor="black"
+              bgColor="transparent"
+              className="transition-transform duration-300 transform hover:scale-125"
+            />
+            <SocialIcon
+              url="https://www.facebook.com/profile.php?id=61572832430958&sk"
+              fgColor="black"
+              bgColor="transparent"
+              className="transition-transform duration-300 transform hover:scale-125"
+            />
+            <SocialIcon
+              url="https://www.youtube.com/@THORONDORBUSINESSSOLUTIONS"
+              fgColor="black"
+              bgColor="transparent"
+              className="transition-transform duration-300 transform hover:scale-125"
+            />
+          </div>
         </div>
       </div>
 
       {/* Copyright Section */}
-      <div className="mt-10">
-        <hr className="border-gray-700" />
-        <p className="py-5 text-center text-gray-400 text-sm">
-          Copyright © 2024 forever.com - All Rights Reserved.
+      <div className="mt-12 text-center">
+        <hr className="border-gray-300 mb-5" />
+        <p className="text-gray-800 text-lg">
+          Copyright © {new Date().getFullYear()} BusinessXStream - All Rights Reserved.
         </p>
       </div>
     </div>
@@ -55,3 +88,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+
+// npm install react-social-icons

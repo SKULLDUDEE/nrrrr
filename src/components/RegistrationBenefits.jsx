@@ -2,16 +2,45 @@ import React from 'react';
 
 const RegistrationBenefits = () => {
     return (
-        <div className="bg-gray-100 py-12 px-6 md:px-16">
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Why Should I Register?</h2>
-            <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-                <ul className="list-disc list-inside text-gray-700 space-y-3">
-                    <li><b>Access to Exclusive Insights:</b> Get exclusive tips, resources, and strategies to grow your business.</li>
-                    <li>Register today to schedule a <b>complimentary strategy session</b> with our experts.</li>
-                    <li>Stay updated on the latest <b>business and franchising trends</b> with curated insights.</li>
-                    <li>Receive access to <b>templates, checklists, and guides</b> that simplify business growth.</li>
-                    <li>Network with a growing business community.</li>
-                    <li>Learn and grow through franchising, distribution, and channel partnerships.</li>
+        <div className="relative flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-indigo-600 px-6">
+            
+            {/* Background Glow Effect */}
+            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-lg blur-3xl opacity-30"></div>
+
+            {/* Main Container */}
+            <div className="relative max-w-4xl w-full bg-white/20 backdrop-blur-lg rounded-xl shadow-2xl border border-white/30 p-10 transform transition-all duration-500 hover:scale-105 hover:shadow-[0_5px_25px_rgba(255,255,255,0.2)]">
+                
+                {/* Title */}
+                <h2 className="text-4xl font-extrabold text-white text-center mb-6 tracking-wide drop-shadow-lg">
+                    Why Should I Register?
+                </h2>
+
+                {/* Benefits List */}
+                <ul className="text-lg text-white/90 space-y-4 tracking-wide">
+                    <li className="flex items-center gap-3">
+                        <span className="text-blue-300 text-2xl">✔</span>
+                        <b className="text-white">Access to Exclusive Insights:</b> Get unique business growth strategies.
+                    </li>
+                    <li className="flex items-center gap-3">
+                        <span className="text-blue-300 text-2xl">✔</span>
+                        Schedule a <b className="text-blue-200">complimentary strategy session</b> with our experts.
+                    </li>
+                    <li className="flex items-center gap-3">
+                        <span className="text-blue-300 text-2xl">✔</span>
+                        Stay updated with <b className="text-blue-200">business and franchising trends</b>.
+                    </li>
+                    <li className="flex items-center gap-3">
+                        <span className="text-blue-300 text-2xl">✔</span>
+                        Gain access to <b className="text-blue-200">templates, checklists, and guides</b>.
+                    </li>
+                    <li className="flex items-center gap-3">
+                        <span className="text-blue-300 text-2xl">✔</span>
+                        Network with an expanding <b className="text-blue-200">business community</b>.
+                    </li>
+                    <li className="flex items-center gap-3">
+                        <span className="text-blue-300 text-2xl">✔</span>
+                        Learn & grow through <b className="text-blue-200">franchising and partnerships</b>.
+                    </li>
                 </ul>
             </div>
         </div>

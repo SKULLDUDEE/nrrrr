@@ -4,6 +4,8 @@ import Hero from '../components/Hero';
 import LatestCollection from '../components/LatestCollection';
 import TopLeadingFranchise from '../components/TopLeadingFranchise';
 import BusinessOpportunities from './BusinessOpportunities';
+import ClientTestimonials from '../components/ClientTestimonials';
+import FeaturedFranchises from "../components/FeaturedFranchises";
 import Services from '../components/Services';
 
 const Home = () => {
@@ -37,6 +39,8 @@ const Home = () => {
             <TopLeadingFranchise />
             <LatestCollection />
             <BusinessOpportunities /> 
+            <ClientTestimonials />
+            <FeaturedFranchises />
             <Services />
         </div>
     );

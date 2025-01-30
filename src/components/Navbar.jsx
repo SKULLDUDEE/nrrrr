@@ -53,12 +53,7 @@ const Navbar = () => {
                 {/* Right Icons (Search, Profile, Cart, Menu) */}
                 <div className="flex items-center gap-6">
                     {/* Search Icon */}
-                    <img
-                        onClick={() => { setShowSearch(true); navigate('/collection') }}
-                        src={assets.search_icon}
-                        className="w-6 cursor-pointer hover:scale-110 transition-all"
-                        alt="Search"
-                    />
+                    
 
                     {/* Profile Dropdown */}
                     <div className="relative">

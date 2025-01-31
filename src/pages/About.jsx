@@ -28,7 +28,7 @@ const About = () => {
         {/* 💡 About Text Section */}
         <div className="flex flex-col justify-center gap-6 md:w-2/4">
           <p className="text-lg leading-relaxed">
-            At <b className="text-orange-600">BusinessXstream.com</b>, we specialize in empowering entrepreneurs and businesses to achieve their full potential. As a unit of 
+            At <b className="text-orange-600">BusinessXStream.com</b>, we specialize in empowering entrepreneurs and businesses to achieve their full potential. As a unit of 
             <b className="text-orange-600"> Thorondor Business Solutions Private Limited</b>, we bring expertise, strategic insight, and innovative solutions to the table.
           </p>
           <p className="text-lg leading-relaxed">

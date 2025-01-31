@@ -5,10 +5,10 @@ import { assets } from "../assets/assets";
 
 const Footer = () => {
   return (
-    <div className="py-16 px-8  border-gray-300 bg-[#ffffff] relative overflow-hidden ">
+    <div className=" py-16 px-8   bg-[#130443] relative overflow-hidden ">
       
       {/* ✨ Animated Background Pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-orange-50 to-white opacity-50 pointer-events-none"></div>
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-transparent via-orange-50 to-white opacity-50 pointer-events-none"></div> */}
 
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-12 relative z-10">
         
@@ -23,28 +23,30 @@ const Footer = () => {
           </Link>
           
           <a
-            href="https://www.businessxstream.com"
+            
             target="_blank"
             rel="noopener noreferrer"
             className="text-2xl font-semibold text-orange-500 hover:text-orange-700 transition-colors duration-300 mt-4"
           >
-            BusinessXstream.com
+            BusinessXStream.com
           </a>
 
-          <p className="text-gray-700 max-w-sm text-lg leading-relaxed mt-3">
+          <p className="text-[#ffffff] max-w-sm text-lg leading-relaxed mt-3">
             Empowering businesses with cutting-edge solutions to streamline operations and accelerate growth.
           </p>
         </div>
 
         {/* 🚀 Quick Links */}
         <div className="mt-12">
-          <p className="text-2xl font-bold text-gray-900 mb-6">Quick Links</p>
-          <ul className="space-y-4 text-lg text-gray-700">
-            {["Home", "About Us", "Contact"].map((item, index) => (
+          <p className="text-2xl font-bold text-[#ffffff] mb-6">Quick Links</p>
+          <ul className="space-y-4 text-lg text-[#ffffff]">
+            {["Home", "About", "Contact"].map((item, index) => (
               <li key={index}>
                 <Link
-                  to={`/${item.toLowerCase().replace(" ", "-")}`}
+                 to={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "-")}`}
+
                   className="relative transition-all duration-300 hover:translate-x-2 hover:text-orange-600 before:absolute before:bottom-0 before:left-0 before:w-0 before:h-1 before:bg-orange-500 before:transition-all before:duration-300 hover:before:w-full"
+                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 >
                   {item}
                 </Link>
@@ -55,13 +57,14 @@ const Footer = () => {
 
         {/* 📜 Policies */}
         <div className="mt-12">
-          <p className="text-2xl font-bold text-gray-900 mb-6">Policies</p>
-          <ul className="space-y-4 text-lg text-gray-700">
+          <p className="text-2xl font-bold text-[#ffffff] mb-6">Policies</p>
+          <ul className="space-y-4 text-lg text-[#ffffff]">
             {["Privacy Policy", "Refund Policy"].map((item, index) => (
               <li key={index}>
                 <Link
                   to="/privacy-policy"
                   className="relative transition-all duration-300 hover:translate-x-2 hover:text-orange-600 before:absolute before:bottom-0 before:left-0 before:w-0 before:h-1 before:bg-orange-500 before:transition-all before:duration-300 hover:before:w-full"
+                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 >
                   {item}
                 </Link>
@@ -81,7 +84,7 @@ const Footer = () => {
           <SocialIcon
             key={index}
             url={link}
-            fgColor="black"
+            fgColor="white"
             bgColor="transparent"
             className="transition-transform duration-300 transform hover:scale-125 hover:rotate-6"
           />
@@ -90,8 +93,8 @@ const Footer = () => {
 
       {/* 📌 Copyright Section */}
       <div className="mt-12 text-center relative z-10">
-        <hr className="border-gray-300 mb-5" />
-        <p className="text-gray-700 text-lg">
+        <hr className="border-[#fbdbdbff] mb-5" />
+        <p className="text-[#896f6f] text-lg">
           Copyright © {new Date().getFullYear()} BusinessXStream - All Rights Reserved.
         </p>
       </div>

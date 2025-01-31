@@ -8,6 +8,7 @@ import ClientTestimonials from '../components/ClientTestimonials';
 import FeaturedFranchises from "../components/FeaturedFranchises";
 import Services from '../components/Services';
 import InnovationPage from './Innovationpage';
+import RegistrationBenefits from '../components/RegistrationBenefits';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -17,8 +18,8 @@ const Home = () => {
         <div className="px-6 md:px-16 py-12">
             <InnovationPage />
             <Services />
-          
-            <div className="px-6 md:px-16 py-12 mt-200">
+           <RegistrationBenefits />
+            <div className="py-10 mt-5">
             
             <div>
             
@@ -28,11 +29,12 @@ const Home = () => {
 
             {/* Other Sections */}
             <Hero />
-            <TopLeadingFranchise />
+            {/* <TopLeadingFranchise /> */}
             <LatestCollection />
-            <BusinessOpportunities /> 
-            <ClientTestimonials />
-            <FeaturedFranchises />
+            {/* <BusinessOpportunities />  */}
+            {/* <ClientTestimonials /> */}
+            {/* <FeaturedFranchises /> */}
+            
         </div>
     );
 };

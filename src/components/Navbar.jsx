@@ -3,6 +3,7 @@ import { assets } from "../assets/assets";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 
+
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
   const navigate = useNavigate();
@@ -21,43 +22,53 @@ const Navbar = () => {
       {/* Navbar Content */}
       <div className="w-full flex justify-between items-center px-6 sm:px-12 py-4 ">
         {/* Logo and Tagline */}
-        <div className="flex items-center gap-4 hover:scale-110 hover:text-green-600 transition-all duration-400 ease-in-out">
-          <Link to="/">
+        <div className="flex items-center gap-1 hover:scale-110 hover:text-green-600 transition-all duration-400 ease-in-out">
+          <Link to="/" 
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             <img src={assets.logo} alt="BusinessXstream" className="h-14 cursor-pointer  " />
+            
           </Link>
-          <Link to="/">
-          <p className="hidden md:block text-gray-200 italic font-extrabold tracking-wide text-2xl ">
+          <Link to="/"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          <p className="hidden md:block text-gray-200  font-extrabold tracking-wide text-2xl ">
             <span className="text-blue-900">B</span>
             <span className="text-gray-800">usiness</span>
             <span className="text-red-500">X</span>
-            <span className="text-gray-800">stream.com</span>
+            <span className="text-gray-800">Stream.com</span>
           </p>
           </Link>
           
         </div>
 
         {/* Navigation Links */}
-        <nav className="hidden sm:flex gap-2 text-lg ml-125 ">
-          {[{ name: "HOME", path: "/" }, { name: "REGISTRATION", path: "/registration" }, { name: "ABOUT US", path: "/about" }, { name: "CONTACT", path: "/contact" }].map((item, index) => (
-            <NavLink
-              key={index}
-              to={item.path}
-              className={({ isActive }) =>
-                `relative px-4 py-2 text-black-200 tracking-wide uppercase
-                transition-all duration-300 ease-in-out
-                hover:text-[#6D6D6D] hover:scale-110
-                before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[2px]
-                before:bg-[#6D6D6D] before:transition-all before:duration-500
-                before:ease-in-out before:rounded-full
-                hover:before:w-full hover:before:left-0
-                ${isActive ? "text-black font-normal" : ""}`
-              }
-              style={{ textDecoration: "none" }}
-            >
-              {item.name}
-            </NavLink>
-          ))}
-        </nav>
+        <nav className="hidden sm:flex gap-2 text-lg ml-[125px]">
+  {[
+    { name: "HOME", path: "/" },
+    { name: "REGISTRATION", path: "/businessform" },
+    { name: "ABOUT US", path: "/about" },
+    { name: "CONTACT", path: "/contact" },
+  ].map((item, index) => (
+    <NavLink
+      key={index}
+      to={item.path}
+      className={({ isActive }) =>
+        `relative px-4 py-2 text-black tracking-wide uppercase
+        transition-all duration-300 ease-in-out
+        hover:text-[#6D6D6D] hover:scale-110
+        before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[2px]
+        before:bg-[#6D6D6D] before:transition-all before:duration-500
+        before:ease-in-out before:rounded-full
+        hover:before:w-full hover:before:left-0
+        ${isActive ? "text-black font-normal" : ""}`
+      }
+      style={{ textDecoration: "none" }}
+    >
+      {item.name}
+    </NavLink>
+  ))}
+</nav>
+
 
         {/* Right Side Icons */}
         <div className="flex items-center gap-6">
@@ -93,7 +104,7 @@ const Navbar = () => {
             <img className="h-4 rotate-180" src={assets.dropdown_icon} alt="Back" />
             <p>Back</p>
           </div>
-          {[{ name: "HOME", path: "/" }, { name: "REGISTRATION", path: "/registration" }, { name: "ABOUT US", path: "/about" }, { name: "CONTACT", path: "/contact" }].map((item, index) => (
+          {[{ name: "HOME", path: "/" }, { name: "REGISTRATION", path: "/businessform" }, { name: "ABOUT US", path: "/about" }, { name: "CONTACT", path: "/contact" }].map((item, index) => (
             <NavLink
               key={index}
               to={item.path}

@@ -22,6 +22,8 @@ import SuccessStories from './components/SuccessStories';
 import Events from './components/UpcomingEvents'; 
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
+import BusinessForm from './pages/BusinessForm';
+
 const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
@@ -45,6 +47,11 @@ const App = () => {
         <Route path="/success-stories" element={<SuccessStories />} />
         <Route path="/events" element={<Events />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+        <Route path="/businessform" element={<BusinessForm />} />
+        {/* Add routes for Franchise Seller, Dealership Seller, Sell Your Business */}
+        <Route path="/franchise-seller" element={<BusinessForm />} />
+<Route path="/dealership-seller" element={<BusinessForm />} />
+<Route path="/sell-your-business" element={<BusinessForm />} />
       </Routes>
       <Footer />
     </div>

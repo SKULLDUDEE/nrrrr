@@ -77,19 +77,19 @@ const InnovationPage = () => {
       <div className="relative w-full h-full flex flex-col justify-center items-center text-center px-6 sm:px-12">
         <p className="text-3xl sm:text-7xl font-extrabold tracking-wide mt-6">
           {/* Each word with individual styling and animation */}
-          <span className="inline-block mx-6 hover-effect text-shadow text-blue-800">
-            Inova
-            <span className=" text-green-900">te</span>
+          <span className="inline-block mx-6 hover-effect text-shadow text-[#E96230]">
+            Innova
+            <span className=" text-[#E96230]">te</span>
           </span>
 
-          <span className="inline-block mx-6 text-orange-900 hover-effect transition-all duration-400 ease-in-out">
+          <span className="inline-block mx-6 text-blue-500 hover-effect transition-all duration-400 ease-in-out">
             Strateg
-            <span className=" text-gray-900">ize</span>
+            <span className=" text-blue-500">ize</span>
           </span>
 
-          <span className="inline-block mx-6 text-black-200 hover-effect transition-all duration-300 ease-in-out">
+          <span className="inline-block mx-6 text-[#E96230] hover-effect transition-all duration-300 ease-in-out">
             Ach
-            <span className=" text-[#151416]">ieve</span>
+            <span className=" text-[#E96230]]">ieve</span>
           </span>
         </p>
 

@@ -4,7 +4,7 @@ import { assets } from '../assets/assets';
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen flex flex-col sm:flex-row items-center bg-[#76C7C0] from-teal-300 via-teal-400 to-teal-500 text-white p-10 sm:p-16 rounded-3xl shadow-2xl border border-teal-200 relative overflow-hidden">
+    <div className="w-full h-screen flex flex-col sm:flex-row items-center bg-[#76C7C0] from-teal-300 via-teal-400 to-teal-500 text-white p-10 sm:p-16 rounded-3xl shadow-2xl border border-teal-200 relative overflow-hidden ">
       
       {/* Animated Background Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-white/10 to-transparent opacity-50 animate-pulse"></div>

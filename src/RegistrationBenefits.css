@@ -101,17 +101,7 @@
     border-radius: 1.25rem;
 }
 
-.bg-white/20 {
-    background-color: rgba(255, 255, 255, 0.2);
-}
 
-.backdrop-blur-lg {
-    backdrop-filter: blur(10px);
-}
-
-.border-white/30 {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
 
 .blur-3xl {
     filter: blur(30px);

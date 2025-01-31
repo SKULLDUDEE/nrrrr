@@ -26,7 +26,7 @@ const dealershipData = [
     name: "Caishen",
     category: "Automobile & Automotive",
     logo: newpay,
-    phone: "+91 97319 61660",
+
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ const DealershipOpportunities = () => {
     <div className="p-8 bg-gray-50 mt-20">
       {/* Title & View All Button */}
       <div className="flex justify-between items-center mb-8">
-        <h2 className="text-3xl font-bold text-gray-800">Top Dealership Opportunities</h2>
+        <h2 className="text-3xl font-bold text-gray-800">Top Available Opportunities</h2>
         <Link 
           to="/AllDealerships" 
           className="text-red-600 text-lg font-semibold hover:underline"
@@ -82,7 +82,7 @@ const DealershipOpportunities = () => {
             {/* Show only Name, Category & Logo for ID 3 */}
             {item.id === 3 ? (
               <p className="text-gray-700 text-sm mt-2">
-                <strong>For More Details:</strong> Call us at {item.phone}
+                <strong>For More Details:</strong> Send us email support@businessxstream.com{item.phone}
               </p>
             ) : (
               <>

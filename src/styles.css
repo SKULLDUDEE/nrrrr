@@ -1,0 +1,80 @@
+/* Animation for scaling on hover */
+@keyframes hover-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Gradient text with smooth transition effect */
+@keyframes text-gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.text-animated {
+  background-image: linear-gradient(90deg, #4e92f4, #4af27f);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: text-gradient 4s ease-in-out infinite;
+}
+
+/* Hover Effect Styling */
+.hover-effect {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+  transform: scale(1.1);
+  /* color: #af10dc; Change color on hover */
+}
+
+/* Text Shadow for added visual depth */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0 0 25px rgba(0, 255, 0, 0.5);
+}
+
+/* Custom Light Blue */
+.text-lightblue-100 {
+  color: #5bc0de;
+}
+
+/* Custom Olive Color for Achieve */
+.text-olive-400 {
+  color: #823838;
+}
+
+/* Typing Effect Animation */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.typing-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  width: 0;
+  animation: typing 4s steps(40) 1s forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}

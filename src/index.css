@@ -5,7 +5,15 @@ a.active hr{
 }
 
 *{
-    font-family: Outfit;
+    font-family: Outfit;   
+}
+html, body {
+  overflow-x: hidden;
+}
+
+body{
+  background:#ffffff;
+  
 }
 
 .prata-regular {

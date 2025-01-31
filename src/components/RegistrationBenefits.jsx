@@ -1,5 +1,5 @@
 import React from 'react';
-import '../registrationBenefits.css';
+import '../RegistrationBenefits.css';
 const RegistrationBenefits = () => {
     return (
         <div className="relative flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-indigo-600 px-6 mt-200">

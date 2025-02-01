@@ -23,6 +23,7 @@ const BusinessForm = () => {
   });
 
   const [selectedForm, setSelectedForm] = useState("");
+  const [showPopup, setShowPopup] = useState(false);  // State for popup visibility
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -40,17 +41,14 @@ const BusinessForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    // Submit the form to the API or any backend logic
+    setShowPopup(true);  // Show popup upon form submission
   };
 
   const handleFormSelect = (e) => {
     const formType = e.target.value.toLowerCase().replace(/\s+/g, '-');
-    console.log(`Navigating to: /${formType}`); // Debug the navigation
     setSelectedForm(e.target.value);
     navigate(`/${formType}`);
   };
-  
-  
 
   return (
     <div className="form-container p-6 max-w-lg mx-auto bg-white shadow-lg rounded-lg">
@@ -75,6 +73,7 @@ const BusinessForm = () => {
             <input
               type="text"
               name="businessName"
+              value={formData.businessName}
               onChange={handleChange}
               required
             />
@@ -85,6 +84,7 @@ const BusinessForm = () => {
             <input
               type="text"
               name="gstNumber"
+              value={formData.gstNumber}
               onChange={handleChange}
               required
             />
@@ -95,6 +95,7 @@ const BusinessForm = () => {
             <input
               type="text"
               name="entityType"
+              value={formData.entityType}
               onChange={handleChange}
               required
             />
@@ -105,6 +106,7 @@ const BusinessForm = () => {
             <input
               type="text"
               name="industryType"
+              value={formData.industryType}
               onChange={handleChange}
               required
             />
@@ -114,6 +116,7 @@ const BusinessForm = () => {
             <label>Business Address</label>
             <textarea
               name="businessAddress"
+              value={formData.businessAddress}
               onChange={handleChange}
               required
             />
@@ -123,6 +126,7 @@ const BusinessForm = () => {
             <label>Business Overview</label>
             <textarea
               name="businessOverview"
+              value={formData.businessOverview}
               onChange={handleChange}
               required
             />
@@ -135,6 +139,7 @@ const BusinessForm = () => {
                 <label>Business Details</label>
                 <textarea
                   name="businessDetails"
+                  value={formData.businessDetails}
                   onChange={handleChange}
                   required
                 />
@@ -154,6 +159,7 @@ const BusinessForm = () => {
                 <input
                   type="text"
                   name="businessLocation"
+                  value={formData.businessLocation}
                   onChange={handleChange}
                   required
                 />
@@ -163,6 +169,7 @@ const BusinessForm = () => {
                 <label>Type of Business Premises</label>
                 <select
                   name="premisesType"
+                  value={formData.premisesType}
                   onChange={handleChange}
                   required
                 >
@@ -177,6 +184,7 @@ const BusinessForm = () => {
                 <input
                   type="text"
                   name="area"
+                  value={formData.area}
                   onChange={handleChange}
                   required
                 />
@@ -186,6 +194,7 @@ const BusinessForm = () => {
                 <label>Reason to Sell</label>
                 <textarea
                   name="reasonToSell"
+                  value={formData.reasonToSell}
                   onChange={handleChange}
                   required
                 />
@@ -201,6 +210,7 @@ const BusinessForm = () => {
                 <input
                   type="text"
                   name="phoneNumber"
+                  value={formData.phoneNumber}
                   onChange={handleChange}
                   required
                 />
@@ -211,6 +221,7 @@ const BusinessForm = () => {
                 <input
                   type="email"
                   name="email"
+                  value={formData.email}
                   onChange={handleChange}
                   required
                 />
@@ -221,6 +232,7 @@ const BusinessForm = () => {
                 <input
                   type="text"
                   name="contactPerson"
+                  value={formData.contactPerson}
                   onChange={handleChange}
                   required
                 />
@@ -228,8 +240,25 @@ const BusinessForm = () => {
             </>
           )}
 
-          <button type="submit" className="submit-btn">Submit</button>
+          <button type="submit" className="submit-btn">
+            Submit
+          </button>
         </form>
+      )}
+
+      {/* Popup for successful submission */}
+      {showPopup && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50000">
+          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+            <p>Your proposal is under review and will be reflected within 24 hours if correct.If any query please mail @enquiry@businessxstream.com</p>
+            <button 
+              className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+              onClick={() => setShowPopup(false)}
+            >
+              OK
+            </button>
+          </div>
+        </div>
       )}
     </div>
   );

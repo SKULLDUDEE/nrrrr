@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap');
 @import "tailwindcss";
 a.active hr{
     display: block;
 }
 
 *{
-    font-family: Outfit;   
-   
+    font-family: 'Overlock', sans-serif;
 
 }
 html, body {
@@ -14,7 +13,7 @@ html, body {
 }
 
 body{
-  background:#ffffff;
+  background:#f9fafb;
   
 }
 
@@ -36,3 +35,4 @@ body{
   }
 
   
+   

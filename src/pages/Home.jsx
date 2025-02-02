@@ -1,11 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Hero from '../components/Hero'; 
+// import Hero from '../components/Hero'; 
 import LatestCollection from '../components/LatestCollection';
-import TopLeadingFranchise from '../components/TopLeadingFranchise';
-import BusinessOpportunities from './BusinessOpportunities';
-import ClientTestimonials from '../components/ClientTestimonials';
-import FeaturedFranchises from "../components/FeaturedFranchises";
+// import TopLeadingFranchise from '../components/TopLeadingFranchise';
+// import BusinessOpportunities from './BusinessOpportunities';
+// import ClientTestimonials from '../components/ClientTestimonials';
+// import FeaturedFranchises from "../components/FeaturedFranchises";
 import Services from '../components/Services';
 import InnovationPage from './Innovationpage';
 import RegistrationBenefits from '../components/RegistrationBenefits';
@@ -28,7 +28,7 @@ const Home = () => {
         </div>
 
             {/* Other Sections */}
-            <Hero />
+            {/* <Hero /> */}
             {/* <TopLeadingFranchise /> */}
             <LatestCollection />
             {/* <BusinessOpportunities />  */}

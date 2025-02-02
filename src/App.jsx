@@ -1,28 +1,30 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import Collection from './pages/Collection'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Product from './pages/Product'
-import Cart from './pages/Cart'
-import Login from './pages/Login'
-import PlaceOrder from './pages/PlaceOrder'
-import Orders from './pages/Orders'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import SearchBar from './components/SearchBar'
-import { ToastContainer, toast } from 'react-toastify';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Collection from './pages/Collection';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Product from './pages/Product';
+import Cart from './pages/Cart';
+import Login from './pages/Login';
+import PlaceOrder from './pages/PlaceOrder';
+import Orders from './pages/Orders';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import SearchBar from './components/SearchBar';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Verify from './pages/Verify'
+import Verify from './pages/Verify';
 import AllDealerships from './pages/AllDealerships';
 import RegistrationBenefits from './components/RegistrationBenefits';
-import Services from './components/Services'; 
-import SuccessStories from './components/SuccessStories'; 
-import Events from './components/UpcomingEvents'; 
+import Services from './components/Services';
+import SuccessStories from './components/SuccessStories';
+import Events from './components/UpcomingEvents';
 import PrivacyPolicy from './pages/PrivacyPolicy';
-
 import BusinessForm from './pages/BusinessForm';
+import DealershipForm from "./pages/DealershipForm";
+import FranchiseForm from "./pages/FranchiseForm";
+import SellYourBusinesss from "./pages/SellYourBusinesss";
 
 const App = () => {
   return (
@@ -48,14 +50,15 @@ const App = () => {
         <Route path="/events" element={<Events />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         <Route path="/businessform" element={<BusinessForm />} />
-        {/* Add routes for Franchise Seller, Dealership Seller, Sell Your Business */}
-        <Route path="/franchise-seller" element={<BusinessForm />} />
-<Route path="/dealership-seller" element={<BusinessForm />} />
-<Route path="/sell-your-business" element={<BusinessForm />} />
+        
+        {/* Correct Routing */}
+        <Route path="/franchise" element={<FranchiseForm />} />
+        <Route path="/dealership" element={<DealershipForm />} />
+        <Route path="/sell-your-businesss" element={<SellYourBusinesss />} />
       </Routes>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

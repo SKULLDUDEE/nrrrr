@@ -44,25 +44,37 @@ const BusinessForm = () => {
     setShowPopup(true);  // Show popup upon form submission
   };
 
-  const handleFormSelect = (e) => {
-    const formType = e.target.value.toLowerCase().replace(/\s+/g, '-');
-    setSelectedForm(e.target.value);
-    navigate(`/${formType}`);
+  // Set selected form based on the option clicked in the navigation
+  const handleFormSelect = (formType) => {
+    const formName = formType.toLowerCase().replace(/\s+/g, '-');
+    setSelectedForm(formType);
+    navigate(`/${formName}`);
   };
 
   return (
     <div className="form-container p-6 max-w-lg mx-auto bg-white shadow-lg rounded-lg">
       <h2 className="text-2xl font-bold mb-4">Business Registration Form</h2>
 
-      {/* Dropdown to select form type */}
-      <div className="input-group mb-4">
-        <label>Select Business Type</label>
-        <select onChange={handleFormSelect} className="w-full p-2 border">
-          <option value="">Select</option>
-          <option value="Franchise Seller">Franchise Seller</option>
-          <option value="Dealership Seller">Dealership Seller</option>
-          <option value="Sell Your Business">Sell Your Business</option>
-        </select>
+      {/* NavBar or buttons to select the form type */}
+      <div className="form-selection-buttons mb-4">
+        <button
+          onClick={() => handleFormSelect("Franchise Seller")}
+          className="w-full p-2 border bg-blue-500 text-white"
+        >
+          Franchise Seller
+        </button>
+        <button
+          onClick={() => handleFormSelect("Dealership Seller")}
+          className="w-full p-2 border bg-blue-500 text-white mt-2"
+        >
+          Dealership Seller
+        </button>
+        <button
+          onClick={() => handleFormSelect("Sell Your Business")}
+          className="w-full p-2 border bg-blue-500 text-white mt-2"
+        >
+          Sell Your Business
+        </button>
       </div>
 
       {/* Render form fields based on selected business type */}
@@ -250,7 +262,7 @@ const BusinessForm = () => {
       {showPopup && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50000">
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <p>Your proposal is under review and will be reflected within 24 hours if correct.If any query please mail @enquiry@businessxstream.com</p>
+            <p>Your proposal is under review and will be reflected within 24 hours if correct. If any query, please email @enquiry@businessxstream.com</p>
             <button 
               className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
               onClick={() => setShowPopup(false)}

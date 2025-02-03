@@ -493,7 +493,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="ml-20 mt-7">
             <p className="text-lg font-bold text-[#ffffff] mb-3">Quick Links</p>
             <ul className="space-y-2 text-sm text-[#ffffff]">
               {[
@@ -516,7 +516,7 @@ const Footer = () => {
           </div>
 
           {/* Policies */}
-          <div>
+          <div className="mt-7">
             <p className="text-lg font-bold text-[#ffffff] mb-3">Policies</p>
             <ul className="space-y-2 text-sm text-[#ffffff]">
               {[
@@ -538,7 +538,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="mt-7">
             <p className="text-lg font-bold text-[#ffffff] mb-3">Contact Us</p>
             <div className="space-y-3 text-sm text-[#ffffff]">
               <div className="flex items-start gap-2 group">

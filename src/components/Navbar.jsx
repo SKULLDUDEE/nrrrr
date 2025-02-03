@@ -43,7 +43,7 @@ const Navbar = () => {
               alt="BusinessXstream"
               className="h-12 cursor-pointer"
             />
-          <p className="flex text-gray-200 font-extrabold tracking-wide text-2xl sm:text-lg md:text-2xl">
+          <p className="flex text-gray-200 font-extrabold tracking-wide text-2xl sm:text-lg md:text-2xl text-xl sm:text-base">
   <span className="text-blue-900">B</span>
   <span className="text-gray-800">usiness</span>
   <span className="text-red-500">X</span>
@@ -52,9 +52,9 @@ const Navbar = () => {
 
           </Link>
           <div class="hidden sm:flex gap-4 ml-6 justify-center w-full">
-  <span class="bg-gradient-to-r from-red-500 via-orange-500 to-black text-transparent bg-clip-text text-xl sm:text-lg w-auto sm:w-auto">Innovate</span>
-  <span class="bg-gradient-to-r from-red-500 via-orange-500 to-black text-transparent bg-clip-text text-xl sm:text-lg w-auto sm:w-auto">Strategize</span>
-  <span class="bg-gradient-to-r from-red-500 via-orange-500 to-black text-transparent bg-clip-text text-xl sm:text-lg w-auto sm:w-auto">Achieve</span>
+  <span class="bg-black text-transparent bg-clip-text text-xl sm:text-lg w-auto sm:w-auto">Innovate</span>
+  <span class="bg-[#d10000ff] text-transparent bg-clip-text text-xl sm:text-lg w-auto sm:w-auto">Strategize</span>
+  <span class="bg-black text-transparent bg-clip-text text-xl sm:text-lg w-auto sm:w-auto">Achieve</span>
 </div>
 
         </div>
@@ -126,12 +126,12 @@ const Navbar = () => {
               src={assets.profile_icon}
               alt="Profile"
             />
-            <h1
+            {/* <h1
               onClick={() => (token ? null : navigate("/login"))}
               className="text-red-500 cursor-pointer"
             >
               LOGIN/SIGNUP
-            </h1>
+            </h1> */}
           </div>
 
           {/* Mobile Menu Icon */}

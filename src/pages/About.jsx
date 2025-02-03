@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="bg-gradient-to-b from-white to-gray-100 text-gray-800 mt-20">
       {/* 🔥 About Section */}
-      <div className="text-center pt-16">
+      <div className="text-center pt-16 font-bold text-3xl">
         <Title text1="ABOUT" text2="US" />
       </div>
 

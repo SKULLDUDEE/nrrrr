@@ -54,10 +54,90 @@
 
 // export default InnovationPage;
 
+// import React from "react";
+// import { useNavigate } from "react-router-dom";
+// import '../styles.css';
+// import backimg from "../assets/backimg.png";
+
+// const InnovationPage = () => {
+//   const navigate = useNavigate();
+
+//   const handleNavigation = (path) => {
+//     navigate(path);
+//   };
+
+//   return (
+//     <div className="absolute top-0 left-0 w-full h-1/2 sm:h-3/4 flex justify-center items-center mt-2">
+      
+//       {/* Background with blur effect */}
+//       <div
+//         className="absolute inset-0"
+//         style={{
+//           backgroundImage: `url(${backimg})`,
+//           backgroundSize: "cover",
+//           backgroundPosition: "center",
+//           filter: "blur(8px)",  // Apply blur effect to the background
+//           zIndex: -1,  // Ensure it's behind the content
+//         }}
+//       ></div>
+
+//       <div className="absolute inset-0 bg-opacity-40"></div>
+
+//       <div className="relative w-full h-full flex flex-col justify-center items-center text-center px-6 sm:px-12">
+//         <p className="text-3xl sm:text-6xl font-extrabold tracking-wide mt-6" 
+//            style={{ color: "black" }}>
+//           <span className="inline-block mx-6 hover-effect" style={{ color: "white" }}>
+//             Inno<span style={{ color: "black" }}>vate</span>
+//           </span>
+//           <span className="inline-block mx-6 hover-effect" style={{ color: "black" }}>
+//             Strateg<span style={{ color: "white" }}>ize</span>
+//           </span>
+//           <span className="inline-block mx-6 hover-effect" style={{ color: "white" }}>
+//             Achie<span style={{ color: "orange" }}>ve</span>
+//           </span>
+//         </p>
+
+//         <p className="text-2xl sm:text-4xl font-semibold typing-effect mt-6" 
+//            style={{ color: "black" }}>
+//           We help you <span style={{ color: "white" }}>innovate</span>, 
+//           <span style={{ color: "white" }}> strategize</span>, and 
+//           <span style={{ color: "red" }}> achieve</span> your business goals
+//         </p>
+
+//         {/* Enhanced Dropdown with Button */}
+//         <div className="flex mt-8 border rounded-md overflow-hidden shadow-xl bg-white">
+//           <select
+//             className="px-6 py-3 w-60 sm:w-130 bg-white text-black font-semibold focus:outline-none focus:ring-2 focus:ring-orange-500 transition duration-300 ease-in-out"
+//             defaultValue=""
+//           >
+//             <option value="" disabled>Select an option</option>
+//             <option value="/franchise" className="hover:bg-orange-200">Franchise</option>
+//             <option value="/dealership" className="hover:bg-orange-200">Dealership</option>
+//             <option value="/sell-your-businesss" className="hover:bg-orange-200">Sell Your Business</option>
+//           </select>
+
+//           <button
+//             className="bg-orange-500 hover:bg-red-500 text-white px-8 py-3 font-bold transition duration-300 ease-in-out"
+//             onClick={() => {
+//               const selectElement = document.querySelector("select");
+//               if (selectElement.value) handleNavigation(selectElement.value);
+//             }}
+//           >
+//             CREATE PROFILE
+//           </button>
+//         </div>
+//       </div>
+      
+//     </div>
+//   );
+// };
+
+// export default InnovationPage;
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import '../styles.css';
 import backimg from "../assets/backimg.png";
+ 
 
 const InnovationPage = () => {
   const navigate = useNavigate();
@@ -67,8 +147,7 @@ const InnovationPage = () => {
   };
 
   return (
-    <div className="absolute top-0 left-0 w-full h-1/2 sm:h-3/4 flex justify-center items-center mt-20">
-      
+    <div className="absolute top-0 left-0 w-full h-1/2 sm:h-3/4 flex justify-center items-center mt-10">
       {/* Background with blur effect */}
       <div
         className="absolute inset-0"
@@ -76,32 +155,31 @@ const InnovationPage = () => {
           backgroundImage: `url(${backimg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          filter: "blur(8px)",  // Apply blur effect to the background
-          zIndex: -1,  // Ensure it's behind the content
+          filter: "blur(10px)",
+          opacity: 0.9,
+          zIndex: -1,
         }}
       ></div>
 
       <div className="absolute inset-0 bg-opacity-40"></div>
 
       <div className="relative w-full h-full flex flex-col justify-center items-center text-center px-6 sm:px-12">
-        <p className="text-3xl sm:text-6xl font-extrabold tracking-wide mt-6" 
-           style={{ color: "black" }}>
+        <p className="text-3xl sm:text-6xl font-extrabold tracking-wide mt-6" style={{ color: "black" }}>
           <span className="inline-block mx-6 hover-effect" style={{ color: "white" }}>
-            Inno<span style={{ color: "black" }}>vate</span>
+            <span style={{ color: "orange" }}>Innovate</span>
           </span>
           <span className="inline-block mx-6 hover-effect" style={{ color: "black" }}>
-            Strateg<span style={{ color: "white" }}>ize</span>
+            <span style={{ color: "#00c8fa" }}>Strategize</span>
           </span>
           <span className="inline-block mx-6 hover-effect" style={{ color: "white" }}>
-            Achie<span style={{ color: "orange" }}>ve</span>
+            <span style={{ color: "orange" }}>Achieve</span>
           </span>
         </p>
 
-        <p className="text-2xl sm:text-4xl font-semibold typing-effect mt-6" 
-           style={{ color: "black" }}>
-          We help you <span style={{ color: "white" }}>innovate</span>, 
-          <span style={{ color: "white" }}> strategize</span>, and 
-          <span style={{ color: "red" }}> achieve</span> your business goals
+        <p className="text-2xl sm:text-4xl font-semibold typing-effect mt-6" style={{ color: "black" }}>
+          We help you <span style={{ color: "white" }}>innovate</span>,
+          <span style={{ color: "white" }}> strategize</span>, and
+          <span style={{ color: "white" }}> achieve</span> your business goals
         </p>
 
         {/* Enhanced Dropdown with Button */}
@@ -126,8 +204,10 @@ const InnovationPage = () => {
             CREATE PROFILE
           </button>
         </div>
+
+        {/* Importing and displaying the Quick Registration Form */}
+       
       </div>
-      
     </div>
   );
 };

@@ -17,7 +17,7 @@ const servicesData = [
 
 const Services = () => {
     return (
-        <div className="relative mt-10 w-full overflow-x-hidden top-110 bg-[#ffffff]"> {/* Updated to w-full and overflow-x-hidden */}
+        <div className="relative -mt-50 w-full overflow-x-hidden top-0 bg-[#ffffff]"> {/* Updated to w-full and overflow-x-hidden */}
             {/* 🚀 Our Services Grid */}
             <div className="py-20 bg-gray-50 px-6 md:px-20">
                 {/* New Intro Section with Beautiful Design */}

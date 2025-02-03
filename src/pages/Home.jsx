@@ -9,6 +9,7 @@ import LatestCollection from '../components/LatestCollection';
 import Services from '../components/Services';
 import InnovationPage from './Innovationpage';
 import RegistrationBenefits from '../components/RegistrationBenefits';
+import RegistrationForm from "../components/RegistrationForm";
 
 const Home = () => {
     const navigate = useNavigate();
@@ -17,6 +18,7 @@ const Home = () => {
          
         <div className="px-6 md:px-16 py-12">
             <InnovationPage />
+            <RegistrationForm />
             <Services />
            <RegistrationBenefits />
             <div className="py-10 mt-5">

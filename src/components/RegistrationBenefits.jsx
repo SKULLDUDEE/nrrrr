@@ -59,7 +59,7 @@ const RegistrationBenefits = () => {
   ];
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#f9fafb] p-8 mt-110">
+    <div className="min-h-screen flex items-center justify-center bg-[#f9fafb] p-8">
       <div className="max-w-3xl w-full bg-white rounded-xl p-12 shadow-lg transition-all duration-300 hover:border hover:border-red-500">
         <h2 className="text-4xl sm:text-6xl font-bold text-gray-800 text-center mb-12">
           Why Should I Register?

@@ -493,10 +493,10 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="ml-20 mt-7">
+          <div className="mt-7 md:ml-20"> {/* Apply margin-left only on medium screens and larger */}
             <p className="text-lg font-bold text-[#ffffff] mb-3">Quick Links</p>
             <ul className="space-y-2 text-sm text-[#ffffff]">
-              {[
+              {[ 
                 { name: "Home", icon: <BiSolidHome className="text-orange-500 text-lg" /> },
                 { name: "About", icon: <BiSolidInfoCircle className="text-orange-500 text-lg" /> },
                 { name: "Contact", icon: <BiSolidContact className="text-orange-500 text-lg" /> }
@@ -519,7 +519,7 @@ const Footer = () => {
           <div className="mt-7">
             <p className="text-lg font-bold text-[#ffffff] mb-3">Policies</p>
             <ul className="space-y-2 text-sm text-[#ffffff]">
-              {[
+              {[ 
                 { name: "Privacy Policy", icon: <BiSolidLock className="text-orange-500 text-lg" /> },
                 { name: "Refund Policy", icon: <BiSolidCreditCard className="text-orange-500 text-lg" /> }
               ].map((item, index) => (
@@ -580,4 +580,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer; 

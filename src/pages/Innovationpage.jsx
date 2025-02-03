@@ -67,7 +67,7 @@ const InnovationPage = () => {
   };
 
   return (
-    <div className="absolute top-0 left-0 w-full h-1/2 sm:h-3/4 flex justify-center items-center">
+    <div className="absolute top-0 left-0 w-full h-1/2 sm:h-3/4 flex justify-center items-center mt-20">
       
       {/* Background with blur effect */}
       <div

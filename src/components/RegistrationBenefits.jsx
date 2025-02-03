@@ -59,23 +59,23 @@ const RegistrationBenefits = () => {
   ];
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#f9fafb] p-8 mt-120">
+    <div className="min-h-screen flex items-center justify-center bg-[#f9fafb] p-8 mt-110">
       <div className="max-w-3xl w-full bg-white rounded-xl p-12 shadow-lg transition-all duration-300 hover:border hover:border-red-500">
-        <h2 className="text-6xl font-bold text-gray-800 text-center mb-12">
+        <h2 className="text-4xl sm:text-6xl font-bold text-gray-800 text-center mb-12">
           Why Should I Register?
         </h2>
 
         <ul className="space-y-8">
           {benefits.map((benefit, index) => (
-            <li key={index} className="group flex items-start gap-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 text-white rounded-lg p-2.5 transition-transform duration-300 group-hover:scale-110">
+            <li key={index} className="group flex flex-col sm:flex-row items-start gap-6">
+              <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 text-white rounded-lg p-2.5 transition-transform duration-300 group-hover:scale-110 mb-4 sm:mb-0">
                 {benefit.icon}
               </div>
               <div className="flex-1">
                 <span className="block text-red-600 font-semibold mb-1 group-hover:text-red-700 transition-colors duration-300">
                   {benefit.highlight}
                 </span>
-                <span className="text-gray-600 group-hover:text-gray-900 transition-colors duration-300">
+                <span className="text-gray-600 group-hover:text-gray-900 transition-colors duration-300 text-sm sm:text-base">
                   {benefit.text}
                 </span>
               </div>

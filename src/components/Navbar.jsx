@@ -43,18 +43,24 @@ const Navbar = () => {
               alt="BusinessXstream"
               className="h-12 cursor-pointer"
             />
-            <p className="flex hidden md:block text-gray-200 font-extrabold tracking-wide text-2xl ">
-              <span className="text-blue-900">B</span>
-              <span className="text-gray-800">usiness</span>
-              <span className="text-red-500">X</span>
-              <span className="text-gray-800">Stream.com</span>
-            </p>
+          <p className="flex text-gray-200 font-extrabold tracking-wide text-2xl sm:text-lg md:text-2xl">
+  <span className="text-blue-900">B</span>
+  <span className="text-gray-800">usiness</span>
+  <span className="text-red-500">X</span>
+  <span className="text-gray-800">Stream.com</span>
+</p>
+
           </Link>
-          <div class="flex gap-4 ml-15 "> <span class="bg-gradient-to-r from-red-500 via-orange-500 to-black text-transparent bg-clip-text">Innovate</span> <span class="bg-gradient-to-r from-red-500 via-orange-500 to-black text-transparent bg-clip-text">Strategize</span> <span class="bg-gradient-to-r from-red-500 via-orange-500 to-black text-transparent bg-clip-text">Achieve</span> </div>
+          <div class="hidden sm:flex gap-4 ml-6 justify-center w-full">
+  <span class="bg-gradient-to-r from-red-500 via-orange-500 to-black text-transparent bg-clip-text text-xl sm:text-lg w-auto sm:w-auto">Innovate</span>
+  <span class="bg-gradient-to-r from-red-500 via-orange-500 to-black text-transparent bg-clip-text text-xl sm:text-lg w-auto sm:w-auto">Strategize</span>
+  <span class="bg-gradient-to-r from-red-500 via-orange-500 to-black text-transparent bg-clip-text text-xl sm:text-lg w-auto sm:w-auto">Achieve</span>
+</div>
+
         </div>
 
         {/* Navigation Links (Desktop) */}
-        <nav className="hidden sm:flex gap-2 text-lg ml-[125px]">
+        <nav className="hidden sm:flex gap-2 text-xl ml-[125px]">
           {[
             { name: "HOME", path: "/" },
             { name: "ABOUT US", path: "/about" },
